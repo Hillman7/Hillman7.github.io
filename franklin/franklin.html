@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-us">
     <head>
+        <link rel="stylesheet" type="text/css" href="screen.css" >
         <meta charset="UTF-8">
         <title>Franklin | Weather </title>
         <meta name="description" content="display's weather">
@@ -8,8 +9,13 @@
     </head>
     <body>
         <header>
-            <h1>&#9729; &#9730; Feeling Lucky?</h1>
-            <h2 id="tagline">Local Weather</h2>
+            <div class = "title">
+
+                <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+                <h1 id="tagline">Local Weather</h1>
+
+            </div>
+
         </header>
         <nav>
             <ul>
@@ -19,64 +25,89 @@
                 <li><a href="#" title="Go to home page">Springfield</a></li>
                 <li><a href="#" title="Go to home page">Search</a></li>
             </ul>
-            <img src="/Hillman7.github.io/franklin/images/background.gif" id="background" alt="background">
+
         </nav>
         <main>
-            <article id="CurrentConditions">
 
-                <img src="/Hillman7.github.io/franklin/images/sun.png" alt="its a sun">
-                <h3>Current Conditions</h3>
-                <h4>Wind</h4>
-                <p id="wind">1 - 5</p>
-                <p id="direction">Southwest</p>
-                <p id="precip"> 0 </p>
+            <article id="locationTemp">
 
+                <section id="Location">
 
-            </article>
-
-            <article id="locationTemp"> <h2>location temp</h2>
-
-                <section id="Location"><h3>location</h3>
-                    <img src="/Hillman7.github.io/franklin/images/oldFranklin.jpg" alt="picture of a billboard about franklin">
                     <h3>Franklin, ID</h3>
 
 
                 </section>
-                <section id="Temperature"><h2>temperature</h2><p>17</p></section>
-                <section id="HighLow"><h2>highLow</h2><img src="/Hillman7.github.io/franklin/images/cartoonSun.png" alt="sun">
-                    <p>90/66</p></section>
+
+
+
+
+                <section id="Temperature"><h2 id="Temp">17 &#9900;</h2>
+
+                </section>
+                <section> <h2 id="highLow">&#9728; 90/66</h2>
+                </section>
+
+
+
+
                 <p id="summary">Sunny</p>
 
 
             </article>
 
+
+
+            <article id="CurrentConditions">
+
+
+                <h3>Current Conditions</h3>
+
+                <div id="wind"><h4>Wind:</h4>
+                    <p id="wind">1 - 5</p>
+                    <p id="direction">Southwest</p></div>
+
+                <div id="precipitation"><p>Precipitation: 0 in </p></div>
+
+
+            </article>
+
+
             <article id="HourlyForecast">
-                <img src="/Hillman7.github.io/franklin/images/watch.jpg" alt="watch">
+
                 <h3>Hourly Forecast</h3>
-                <p>12:00 AM :55</p>
-                <p>1:00 AM :56</p>
-                <p>2:00 AM :56</p>
-                <p>3:00 AM :56</p>
-                <p>4:00 AM :57</p>
-                <p>5:00 AM :57</p>
-                <p>6:00 AM :58</p>
-                <p>7:00 AM :62</p>
-                <p>8:00 AM :63</p>
-                <p>9:00 AM :67</p>
-                <p>10:00 AM :70</p>
-                <p>11:00 AM :73</p>
-                <p>12:00 PM :77</p>
-                <p>1:00 PM :80</p>
-                <p>2:00 PM :84</p>
-                <p>3:00 PM :83</p>
-                <p>4:00 PM :83</p>
-                <p>5:00 PM :80</p>
-                <p>6:00 PM :79</p>
-                <p>7:00 PM :74</p>
-                <p>8:00 PM :70</p>
-                <p>10:00 PM :68</p>
-                <p>11:00 PM :60</p>
-                <p>12:00 PM :58</p>
+                <ul>
+                    <li>12:00 AM :55</li>
+                    <li>1:00 AM :56</li>
+                    <li>2:00 AM :56</li>
+                    <li>3:00 AM :56</li>
+                    <li>4:00 AM :57</li>
+                    <li>5:00 AM :57</li>
+                    <li>6:00 AM :58</li>
+                    <li>7:00 AM :62</li>
+                    <li>8:00 AM :63</li>
+                    <li>9:00 AM :67</li>
+                    <li>10:00 AM :70</li>
+                    <li>11:00 AM :73</li>
+                    <li>12:00 PM :77</li>
+                    <li>1:00 PM :80</li>
+                    <li>2:00 PM :84</li>
+                    <li>3:00 PM :83</li>
+                    <li>4:00 PM :83</li>
+                    <li>5:00 PM :80</li>
+                    <li>6:00 PM :79</li>
+                    <li>7:00 PM :74</li>
+                    <li>8:00 PM :70</li>
+                    <li>10:00 PM :68</li>
+                    <li>11:00 PM :60</li>
+                    <li>12:00 PM :58</li>
+
+
+
+
+
+
+                </ul>
+
 
 
             </article>
