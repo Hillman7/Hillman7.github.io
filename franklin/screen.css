@@ -52,9 +52,10 @@ main {
 
 nav ul {
     display: flex;
-    height:80px;
-    line-height:500%;
+    height:8px;
+    line-height:100%;
     list-style-type: none;
+
 
 
 
@@ -63,7 +64,8 @@ nav ul {
 }
 
 nav ul li {
-    padding-left: 20px;
+    padding-left: 10px;
+    float:left;
 }
 
 nav {
@@ -71,7 +73,12 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    line-height: 100px;
+    background-color: #F07C6C;
+    margin:auto;
+    max-width:100%;
+
+
+
 
 }
 
@@ -87,15 +94,6 @@ nav {
 
 #summary {
     visibility: hidden;
-}
-
-
-
-
-#CurrentConditions {
-
-
-
 }
 
 #wind {
@@ -136,16 +134,21 @@ nav {
 
 
 header {
-    background-color:aqua;
+    background-color:#A6D8D8;
 }
 
 
 
 
 
-#navbar{
-    background-color: aqua;
+
+
+
+#CurrentConditions {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+
 }
-
-
 
