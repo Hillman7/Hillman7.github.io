@@ -6,15 +6,28 @@
 }
 
 
+
+/*Changes the font for all the headings
+*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Sansita, "second choice", generic-family;
+    font-family: Sansita,Georgia serif, cursive;
 }
 
+/* changes the font for all of the body
+*/
+body{
+    font-family: Helvetica;
+}
+
+
+
+/* changes the background image
+*/
 main {
     background-image: url("images/sunny-winter.jpg");
     background-size: cover;
@@ -44,12 +57,18 @@ body {
     font-size: 20px;
 }
 
+
+/* makes everything centered when page is seen in mobile phones
+*/
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
+
+/* gets rid of bullet points and changes font size
+*/
 nav ul {
     display: flex;
     height:2px;
@@ -64,11 +83,46 @@ nav ul {
 
 }
 
+
+
+/* makes nav bar links have no underline
+*/
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
+
+
+/* visited link */
+a:visited {
+    color: #00d8ff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ff0062;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+
+
+
+
+/* makes uniformed spaces in between links in nav
+*/
 nav ul li {
     padding-left: 5px;
     float:left;
 }
 
+
+/* changes background color and makes nav follow bottom of screen.
+*/
 nav {
     position: fixed;
     bottom: 0;
@@ -83,32 +137,45 @@ nav {
 
 }
 
-
+/* pushes title to the right.
+*/
 .title h1 + h1 {
     text-align: right;
     margin-top: -.7em;
 }
 
+
+
+/* adds a cool background to hourly forecast
+*/
 #HourlyForecast {
-    visibility: hidden;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
-#summary {
-    visibility: hidden;
-}
 
+/* pushes the wind to the left so that it looks good
+*/
 #wind {
     display:flex;
     margin-left: 50px;
 
 }
 
+
+/* makes sure that precipitation flows
+*/
 #precipitation {
     display:flex;
 
 
 }
 
+
+/* makes sure that precipitation flows
+*/
 #LocationTemp {
     display:flex;
 
@@ -116,24 +183,31 @@ nav {
 
 
 
-
-#HighLow{
+/* makes a good amount of distance from the left side
+* for the high low
+*/
+#highLow{
     display:flex;
-    margin-left:100px;
+    margin-left: 80px;
 }
 
+
+
+
+/* makes a good amount of distance from the left side
+* for the temp
+*/
 #Temp{
     display:flex;
     margin-left: 20px;
 
 }
 
-#highLow {
-    margin-left: 80px;
-}
 
 
 
+/* changes background color on header
+*/
 header {
     background-color:#A6D8D8;
 }
@@ -144,7 +218,8 @@ header {
 
 
 
-
+/* makes a cool background around currentconditions box
+*/
 #CurrentConditions {
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
@@ -153,8 +228,33 @@ header {
 
 }
 
+
+
+/* gives space for the footer to appear above the nav bar
+*/
 footer {
     line-height: 60px;
     height:44px;
     font-size:10px;
 }
+
+
+
+/* makes a cool box for location temp
+*/
+#locationTemp {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+/* rotates the dice
+*/
+#rotatedDice {
+
+        transform: rotate(25deg);
+        display: inline-block;
+}
+
