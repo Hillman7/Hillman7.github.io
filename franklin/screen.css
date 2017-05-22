@@ -153,6 +153,7 @@ nav {
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
+    visibility: hidden;
 }
 
 
