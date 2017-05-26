@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
+
+
+
+
 * {
     box-sizing: border-box; /* changes width property
     to total width instead of content width */
@@ -66,6 +70,10 @@ main {
     align-items: center;
 }
 
+/**picture to be shown when desktop sized***/
+.hiddenPic {
+    visibility:hidden;
+}
 
 
 
@@ -135,6 +143,10 @@ nav {
 
 
 }
+
+
+
+
 
 /************************************************************************/
 
@@ -286,17 +298,27 @@ footer {
                 order: 1;
                 flex-grow:1;
 
+
             }
 
 
             #locationTemp {
+                display:flex;
                 background-color: rgba(200,200,200,.6);
                 margin: .2em auto;
                 border: 1px solid;
                 border-radius: 5px;
 
+
+
+                /* makes box in middle flow down in column*/
+                flex-direction:column;
+                justify-content:space-between;
+
                 order:2;
                 flex-grow: 1;
+
+
             }
 
 
@@ -330,6 +352,35 @@ footer {
                 margin-left:3em;
             }
 
+            #middleBox {
+
+                background-color: rgba(200,200,200,.6);
+                margin: .2em auto;
+                border: 1px solid;
+                border-radius: 5px;
+                visibility: visible;
+            }
+
+            #location {
+
+
+            }
+            .hiddenPic {
+                visibility:visible;
+            }
+
+
+
+            .miniHeader{
+                width:60%;
+                margin-left:20px;
+            }
+
+            #summary {
+                width:60%;
+                margin-left:20px;
+            }
+
         }
 
 /********************************************************************************************************/
@@ -337,6 +388,10 @@ footer {
 
 
     }
+
+
+
+
 
 
 
