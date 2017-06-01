@@ -180,6 +180,12 @@ nav {
 
 }
 
+#windSpeed {
+    display:flex;
+    margin-left: 50px;
+
+}
+
 
 /* makes sure that precipitation flows
 */
