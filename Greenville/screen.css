@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+
+
+
+
+* {
+    box-sizing: border-box; /* changes width property
+    to total width instead of content width */
+}
+
+
+
+/*Changes the font for all the headings
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita,Georgia serif, cursive;
+}
+
+/* changes the font for all of the body
+*/
+body{
+    font-family: Helvetica;
+}
+
+
+
+/* changes the background image
+*/
+main {
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
+}
+
+
+
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block; /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
+body {
+    margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
+    background-color: #A6D8D8;
+    font-size: 20px;
+}
+
+
+/* makes everything centered when page is seen in mobile phones
+*/
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/**picture to be shown when desktop sized***/
+.hiddenPic {
+    visibility:hidden;
+}
+
+
+
+/**********************************************************************************
+* This block of css will affect the nav bar.
+*
+**********************************************************************************/
+
+/* gets rid of bullet points and changes font size
+*/
+nav ul {
+    display: flex;
+    height:2px;
+    list-style-type: none;
+    font-size: 14px;
+
+}
+
+
+/* makes nav bar links have no underline
+*/
+nav a:link {
+    text-decoration: none;
+    color: #e83ece;
+}
+
+
+
+/* visited link */
+a:visited {
+    color: #69121f;
+}
+
+/* mouse over link */
+a:hover {
+    color: #00ffb1;
+}
+
+/* selected link */
+a:active {
+    color: #f80707;
+}
+
+
+
+
+/* makes uniformed spaces in between links in nav
+*/
+nav ul li {
+    padding-left: 5px;
+    float:left;
+}
+
+
+/* changes background color and makes nav follow bottom of screen.
+*/
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #A6D8D8;
+    margin:auto;
+    max-width:100%;
+
+
+
+
+}
+
+
+
+
+
+/************************************************************************/
+
+
+
+/* pushes title to the right.
+*/
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+
+
+/* adds a cool background to hourly forecast
+*/
+#HourlyForecast {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+
+/* pushes the wind to the left so that it looks good
+*/
+#wind {
+    display:flex;
+    margin-left: 50px;
+
+}
+
+
+/* makes sure that precipitation flows
+*/
+#precipitation {
+    display:flex;
+
+
+}
+
+
+/* makes sure that precipitation flows
+*/
+#LocationTemp {
+    display:flex;
+
+}
+
+
+
+/* makes a good amount of distance from the left side
+* for the high low
+*/
+#highLow{
+    display:flex;
+    margin-left: 80px;
+}
+
+
+
+
+/* makes a good amount of distance from the left side
+* for the temp
+*/
+#Temp{
+    display:flex;
+    margin-left: 20px;
+
+}
+
+
+
+
+/* changes background color on header
+*/
+header {
+    background-color:#A6D8D8;
+}
+
+
+
+
+
+
+
+/* makes a cool background around currentconditions box
+*/
+#CurrentConditions {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+
+
+
+/* gives space for the footer to appear above the nav bar
+*/
+footer {
+    line-height: 60px;
+    height:44px;
+    font-size:10px;
+}
+
+
+
+/* makes a cool box for location temp
+*/
+#locationTemp {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+/* rotates the dice
+*/
+#rotatedDice {
+
+        transform: rotate(25deg);
+        display: inline-block;
+}
+
+
+/********************************************************************************************************/
+
+    /* For desktop: */
+
+/********************************************************************************************************/
+        /* flex flow main */
+        @media only screen and (min-width: 768px) {
+
+            main {
+                display:flex;
+                flex-direction:row;
+                align-items: stretch;
+
+            }
+            #CurrentConditions {
+                background-color: rgba(200,200,200,.6);
+                margin: .2em auto;
+                border: 1px solid;
+                border-radius: 5px;
+
+                order: 1;
+                flex-grow:1;
+
+
+            }
+
+
+            #locationTemp {
+                display:flex;
+                background-color: rgba(200,200,200,.6);
+                margin: .2em auto;
+                border: 1px solid;
+                border-radius: 5px;
+
+
+
+                /* makes box in middle flow down in column*/
+                flex-direction:column;
+                justify-content:space-between;
+
+                order:2;
+                flex-grow: 1;
+
+
+            }
+
+
+            #HourlyForecast {
+                background-color: rgba(200,200,200,.6);
+                margin: .2em auto;
+                border: 1px solid;
+                border-radius: 5px;
+                visibility: visible;
+                order: 3;
+                flex-grow:1;
+            }
+
+
+            /* Makes Nav static or not move.
+            */
+            nav {
+
+                position:static;
+
+                margin:auto;
+                max-width:100%;
+                min-height:20%;
+
+            }
+
+            /* makes the title move over when viewing page on a laptop or computer*/
+            .title h1 + h1 {
+                text-align: left;
+                margin-top: -.7em;
+                margin-left:3em;
+            }
+
+            #middleBox {
+
+                background-color: rgba(200,200,200,.6);
+                margin: .2em auto;
+                border: 1px solid;
+                border-radius: 5px;
+                visibility: visible;
+            }
+
+            #location {
+
+
+            }
+            .hiddenPic {
+                visibility:visible;
+            }
+
+
+
+            .miniHeader{
+                width:60%;
+                margin-left:20%;
+            }
+
+            #summary {
+                width:60%;
+                margin-left:30%;
+            }
+
+        }
+
+/********************************************************************************************************/
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
