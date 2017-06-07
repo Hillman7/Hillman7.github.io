@@ -1,0 +1,20 @@
+
+/* changes box width to total width*/
+* {box-sizing: border-box;
+}
+
+
+#paragraph {
+    background-color: cyan;
+}
+
+
+main {
+    background-image: url(/Hillman7.github.io/comm/images/temple.jpg)
+
+
+}
+
+#output {
+    margin-top: 20px;
+}
