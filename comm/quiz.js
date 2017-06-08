@@ -32,3 +32,11 @@ function solution()
 
 }
 
+
+function submit()
+{
+    var display = "uh... wait really?"
+    document.getElementById("output").innerHTML = display;
+
+}
+
