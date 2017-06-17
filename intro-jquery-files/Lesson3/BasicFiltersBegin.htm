@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Filters</title>
+    <link rel="stylesheet" href="css/filters.css">
+
+    <!-- ONLINE SCRIPT -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script>
+    $(function(){
+        // All jQuery code goes here
+
+
+        // first line element
+        $('li:first').css('background-color', 'rgb(248,95,95)');
+
+
+        // last line element
+        $('li:last').css('background-color', 'rgb(248,95,95)');
+
+
+        // even numbered elements
+        $('li:even').css('background-color', 'rgb(248,95,95)');
+
+        // odd numbered elements
+        $('li:odd').css('background-color', 'rgb(248,95,95)');
+
+
+        // certain things
+        $('li:eq(3)').css('background-color', 'rgb(248,95,95)');
+
+
+    })
+    </script>
+</head>
+<body>
+<ul>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Peaches</li>
+        <li>Strawberries</li>
+        <li>Kiwi</li>
+</ul>
+
+</body>
+</html>

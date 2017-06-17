@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Filters</title>
+    <link rel="stylesheet" href="css/filters.css">
+
+<!-- ONLINE SCRIPT -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <!-- Local script -->
+
+
+<!--    <script src="js/jquery-3.0.0.min.js"></script> -->
+   <script>
+
+
+
+
+    $(function(){
+        // All jQuery code goes here
+
+        // first list item tags
+        $('li:first-of-type').css('background-color','rgb(248,95,95)');
+
+        // only elements in their structure
+        $('li:only-of-type').css('background-color','rgb(248,95,95)');
+
+        // elements contain a certain word.
+        $('li:contains("Crush")').css('background-color','rgb(248,95,95)');
+
+
+        // elements that are empty
+        $('li:empty').css('background-color','rgb(248,95,95)');
+
+        // has a element of a give type
+        $('li:has("h4")').css('background-color','rgb(248,95,95)');
+
+        // grabbing all nth numbered elements (starts at one not 0)
+        $('li:nth-child(3)').css('background-color','rgb(248,95,95)');
+
+        // child selector selects childs if they are within the parent.
+        // >
+
+        // elements that follow SIBLING
+        // +
+
+
+
+
+
+
+
+
+
+
+
+    })
+    </script>
+</head>
+<body>
+<ul>
+        <li>Apples</li>
+        <li>Oranges
+            <ul>
+                <li></li>
+            </ul>
+        </li>
+        <li>Peaches</li>
+        <li>Strawberries
+            <ul>
+                <li>Jam</li>
+                <li>Crush</li>
+                <li>Cake</li>
+            </ul>
+        </li>
+        <li>Kiwi
+            <ul>
+                <li><h4>Crush</h4></li>
+            </ul>
+        </li>
+</ul>
+
+</body>
+</html>
