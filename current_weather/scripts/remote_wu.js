@@ -36,11 +36,11 @@ $(function () {
                 var feel = parsed_json['current_observation']['feelslike_f'];
                 var update = parsed_json['current_observation']['observation_time'];
                 $('#miniHeader').html(location + ',' + ' ' + state);
-                $('#highLow').html(Math.round(temp_f) + "&#176");
+                $('#Temp').html(Math.round(temp_f) + "&#176");
                 $('#summary').html(summary);
                 $('#wind').html("Wind in MPH:" + ' ' + wind);
                 $('#precipitation').html("The Precipitation today is " + precep);
-         //       $('#add3').html('Today feels like:' + ' ' + Math.round(feel) + '&#176');
+                $('#feel').html('Today feels like:' + ' ' + Math.round(feel) + '&#176');
          //       $('#update').html(update);
         //        $("#cover").fadeOut(250);
 
