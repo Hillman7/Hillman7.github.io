@@ -35,14 +35,14 @@ $(function () {
                 var precep = parsed_json['current_observation']['precip_today_in'];
                 var feel = parsed_json['current_observation']['feelslike_f'];
                 var update = parsed_json['current_observation']['observation_time'];
-                $('#cityDisplay').html(location + ',' + ' ' + state);
-                $('#currentTemp').html(Math.round(temp_f) + "&#176");
+                $('#miniHeader').html(location + ',' + ' ' + state);
+                $('#highLow').html(Math.round(temp_f) + "&#176");
                 $('#summary').html(summary);
-                $('#add1').html("Wind in MPH:" + ' ' + wind);
-                $('#add2').html("The Percepitation today is " + precep);
-                $('#add3').html('Today feels like:' + ' ' + Math.round(feel) + '&#176');
-                $('#update').html(update);
-                $("#cover").fadeOut(250);
+                $('#wind').html("Wind in MPH:" + ' ' + wind);
+                $('#precipitation').html("The Precipitation today is " + precep);
+         //       $('#add3').html('Today feels like:' + ' ' + Math.round(feel) + '&#176');
+         //       $('#update').html(update);
+        //        $("#cover").fadeOut(250);
 
             }
         });
