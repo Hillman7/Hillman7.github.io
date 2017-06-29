@@ -16,6 +16,43 @@
     $(function(){
         // jQuery Code goes here
 
+        // listens for the click on THIS
+    //    $('.boxHolder').on('click','li',function(){
+    //        $(this).addClass('greenBox');
+
+
+      //  })
+
+//        $('.boxHolder').on('dblclick','li',function(){
+
+  //          $(this).addClass('orangeBox');
+    //    })
+
+
+
+        $('.boxHolder').on({
+            click: function(){
+                // click handler
+                $(this).addClass('greenBox');
+
+            },
+            dblclick: function(){
+                // double click handler
+                $(this).addClass('orangeBox');
+            }
+
+
+
+
+
+
+
+        }, "li")
+
+
+
+
+
     })
     </script>
 </head>
