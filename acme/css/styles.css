@@ -1,0 +1,143 @@
+
+
+
+
+/*
+* {
+    box-sizing: border-box;  changes width property
+    to total width instead of content width
+}
+*/
+
+
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+
+/*
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;  just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements
+}
+*/
+
+
+header {
+    background-color:#ffffff;
+}
+
+
+/*
+body {
+    margin: 0; /* remove any margin from body */
+/*    padding: 0; /* ditto for padding */
+ /*   font-size: 20px;
+}
+*/
+
+
+
+
+
+body {
+    background-image:url(/Hillman7.github.io/acme/images/site/background.jpg);
+}
+
+/* makes everything centered when page is seen in mobile phones
+*/
+/*
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+*/
+
+
+
+nav {
+    margin-top: 0;
+
+}
+
+nav > ul {
+    margin: 0;
+}
+
+
+
+
+/* Nav Bar */
+nav ul {
+background-color:#de2226;
+
+}
+
+
+/* gets rid of bullet points and changes font size
+*/
+nav ul {
+    display: flex;
+    height:50px;
+    list-style-type: none;
+    font-size: 14px;
+    color:#ffffff;
+
+}
+
+
+/* makes nav bar links have no underline
+*/
+nav a:link {
+    text-decoration: none;
+    color: #e83ece;
+}
+
+
+
+/* makes uniformed spaces in between links in nav
+*/
+nav ul li {
+    padding-left: 5px;
+    float:left;
+}
+
+/**********************************************************/
+/* We need to do stuff to the footer. */
+
+footer ul {
+  /*  font-size: .7rem;
+    padding-right:1em; */
+    text-align:center;
+    list-style-type: none;
+    margin: 0;
+    background-color:#ffffff;
+}
+
+
+
+/* adds a cool background to hourly forecast
+*/
+#HourlyForecast {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+
+

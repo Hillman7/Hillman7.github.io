@@ -37,7 +37,6 @@ $("#searchResults").on("click", "a", function (evt) {
     console.log(jsonCity);
     index = $(this).index("a");
 
-
     // gets the latitude and longitude
     getData(index.lat, index.lon);
 
