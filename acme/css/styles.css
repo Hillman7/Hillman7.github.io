@@ -16,6 +16,10 @@
 
 
 
+
+
+
+
 /*
 
 article,
@@ -39,13 +43,13 @@ header {
 }
 
 
-/*
+
 body {
     margin: 0; /* remove any margin from body */
-/*    padding: 0; /* ditto for padding */
- /*   font-size: 20px;
+    padding: 0; /* ditto for padding */
+    font-size: 20px;
 }
-*/
+
 
 
 
@@ -55,22 +59,27 @@ body {
     background-image:url(/Hillman7.github.io/acme/images/site/background.jpg);
 }
 
+
+
+
+
 /* makes everything centered when page is seen in mobile phones
 */
-/*
+
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    width:100%;
 }
 
-*/
+
 
 
 
 nav {
     margin-top: 0;
-
+    margin-bottom:0;
 }
 
 nav > ul {
@@ -138,6 +147,30 @@ footer ul {
     border-radius: 5px;
     visibility: hidden;
 }
+
+
+
+
+
+
+
+
+
+#home_content {
+
+    background-color:#ffffff;
+/*    position:relative;*/
+    height:100;
+/*    margin-top:0;*/
+    width:100%;
+
+}
+
+
+
+
+
+
 
 
 

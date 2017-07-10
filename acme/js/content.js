@@ -137,25 +137,25 @@ function nav(){
 
 
             // put it in.
-            document.getElementById('Anvils').innerHTML = anvil;
+            document.getElementById('anvils').innerHTML = anvil;
 
 
 
             // put it in.
-            document.getElementById('Explosives').innerHTML = explosives;
-
-
-
-
-            // put it in.
-            document.getElementById('Decoys').innerHTML = decoys;
-
+            document.getElementById('explosives').innerHTML = explosives;
 
 
 
 
             // put it in.
-            document.getElementById('Traps').innerHTML = traps;
+            document.getElementById('decoys').innerHTML = decoys;
+
+
+
+
+
+            // put it in.
+            document.getElementById('traps').innerHTML = traps;
 
 
 
