@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Acme</title>
         <meta name="viewport" content="width=device-width">
-        <link href='/Hillman7.github.io/acme/css/styles.css' rel='stylesheet' type='text/css'>
+        <link href='/Hillman7.github.io/acme/css/styles_final.css' rel='stylesheet' type='text/css'>
     </head>
 
 
@@ -21,29 +21,151 @@
 
             <nav id ="navigation">
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a id = "anvils"></a></li>
-                    <li><a id = "explosives"></a></li>
-                    <li><a id = "decoys"></a></li>
-                    <li><a id = "traps"></a></li>
+                    <li><a title = "Home">Home</a></li>
+                    <li><a id = "anvils" title ="anvils"></a></li>
+                    <li><a id = "explosives" title = "explosives"></a></li>
+                    <li><a id = "decoys" title = "decoys"></a></li>
+                    <li><a id = "traps" title = "traps"></a></li>
                 </ul>
             </nav>
             <main>
                 <article id="home_content">
+                    <h3 id = "content">Welcome to Acme!</h3>
 
 
 
 
 
-                    <section>
+
+<!------------------------ This is for the middle area. ---------------------  -->
+                    <section id ="hero_banner">
+
+                        <img src="images/site/feature.jpg" id="hero_pic">
 
 
-                        <h3 id = "content">Welcome to Acme!</h3>
+                        <ul id = "rocket_list">
+                            <li><h2>Acme Rocket</h2></li>
+                            <li>Quick lighting fuse</li>
+                            <li>NHTSA approved seat belts</li>
+                            <li>Mobile launch stand included</li>
+                            <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/Hillman7.github.io/acme/images/site/iwantit.gif" id ="iwantit"></a></li>
+                        </ul>
+                    </section>
+
+<!------------------------------------------------------------------------------>
+
+
+
+<!-- Bottom half -->
+<section id= "bottomhalf">
+    <h1 id="Featured Recipes">Featured Recipes</h1>
+
+
+    <table>
+    <tr>
+        <th class = "bordergrey"><img src ="/Hillman7.github.io/acme/images/recipes/bbqsand.jpg"></th>
+        <th class = "bordergrey"><img src ="/Hillman7.github.io/acme/images/recipes/potpie.jpg"></th>
+    </tr>
+
+
+
+    <tr>
+        <th><a>Pulled Roadrunner BBQ</a></th>
+        <th><a>Roadrunner Pot Pie</a></th>
+    </tr>
+
+
+
+
+    <tr>
+        <th class = "bordergrey"><img src = "/Hillman7.github.io/acme/images/recipes/soup.jpg"></th>
+
+        <th class = "bordergrey"><img src = "/Hillman7.github.io/acme/images/recipes/taco.jpg"></th>
+
+    </tr>
+
+
+    <tr>
+        <th><a>Roadrunner Soup</a></th>
+        <th><a>Roadrunner tacos</a></th>
+
+
+    </tr>
+
+
+
+
+
+
+
+    </table>
+
+
+
+
+
+<section id = "rocketreviews">
+
+
+    <h1>Acme Rocket Reviews</h1>
+    <ul id = "reviews">
+        <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+        <li>"That thing was fast!" (4/5)</li>
+        <li>"Talk about fast delivery." (5/5)</li>
+        <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+        <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+    </ul>
+
+
+
+
+</section>
+
+
+
+</section>
+
+                    <br>
+                    <br>
+
+
+
+<!--  ------------------------------------------------------------->
+
+
+
+
+
+<!-- insert json data into these elements -->
+
+                    <section id="product_content">
+
+                        <h1 id= "product_name"></h1>
+
+                        <img id = "product_picture" alt = "A picture of the Product.">
+
+                        <paragraph id = "product_description"></paragraph>
+
+
+
+
+
+
+
+                        <paragraph id = "product_manufacturer"></paragraph>
+
+
+                        <section id= "product_reviews"></section>
+
+
+                        <h1 id= "product_price"></h1>
+
+
 
 
                     </section>
 
-
+<!----------------------------------------------------------- ------------------->
 
 
                 </article>
@@ -74,7 +196,7 @@
 
 
                 <!-- This connects to the content-->
-                <script src="/Hillman7.github.io/acme/js/content.js"></script>
+                <script src="/Hillman7.github.io/acme/js/content_final.js"></script>
 
 
 
