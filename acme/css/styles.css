@@ -42,13 +42,16 @@ header {
     background-color:#ffffff;
 }
 
-
+/* remove any margin from body */
+/* ditto for padding */
+/*
 
 body {
-    margin: 0; /* remove any margin from body */
-    padding: 0; /* ditto for padding */
+    margin: 0;
+    padding: 0;
     font-size: 20px;
 }
+*/
 
 
 
