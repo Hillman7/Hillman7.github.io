@@ -215,6 +215,7 @@ product content hidden by default
 
 #product_content {
     visibility:hidden;
+    background-color:transparent;
 }
 
 
@@ -258,7 +259,9 @@ product content hidden by default
     flex-flow: column nowrap;
     align-items: center;
     width:100%;
-/*    background-color:#ffffff;*/
+    /*    background-color:#ffffff;*/
+
+
 }
 
 

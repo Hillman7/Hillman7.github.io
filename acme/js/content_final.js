@@ -29,6 +29,10 @@ $("#navigation").on("click", "a", function (evt) {
             $('#product_content').css("visibility","visible");
 
 
+            // make the background color ppear
+            $('#changeContent').css("background-color","#ffffff");
+
+
 
 
 
