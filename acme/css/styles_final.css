@@ -148,13 +148,10 @@ footer ul {
 }
 
 
-/*********************************************************
-product content hidden by default
-*********************************************************/
 
-#product_content {
-    visibility:hidden;
-}
+
+
+
 
 footer {
     position:fixed;
@@ -205,14 +202,64 @@ height:70%
 
 
 
+
+
+
+
+
+
+
+/*********************************************************
+product content hidden by default
+*********************************************************/
+
+#product_content {
+    visibility:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /******************* MEDIUM SIZE SCREENS ***********************************/
 
+/* flex flow main */
+@media only screen and (min-width: 768px) {
+
+
+    #rocketreviews{
+        position:absolute;
+        right:10;
+        top:590;
+
+
+    }
 
 
 
+}
 
 
+/***************************** This is the styling for inserted content ************************************/
 
+
+/* makes everything centered when page is seen in mobile phones
+*/
+
+#changeContent{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width:100%;
+/*    background-color:#ffffff;*/
+}
 
 
 
