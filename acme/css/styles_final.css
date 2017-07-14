@@ -249,7 +249,7 @@ product content hidden by default
 
 
 
-}
+
 
 
 /***************************** This is the styling for inserted content ************************************/
@@ -277,12 +277,6 @@ product content hidden by default
 
 
 
-
-
-
-
-/***************** Bigger Screens *******************/
-@media only screen and (min-width: 768px) {}
 
 
 #innerContent{
@@ -313,7 +307,7 @@ product content hidden by default
 
 
 
-
+}
 
 
 
