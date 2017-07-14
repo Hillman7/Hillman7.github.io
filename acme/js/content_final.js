@@ -358,7 +358,7 @@ if (nav == "Anvil"){
                 //
 
                 // picture goes here.
-                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/trapsmall.jpg" />')
+                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/trapsmall.jpg" alt = "picture of product" />')
 
 
 
