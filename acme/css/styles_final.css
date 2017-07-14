@@ -162,12 +162,30 @@ footer {
 
 
 /* get the middle to work */
+
+
+
+
+#hero_banner{
+    background-image:url(/Hillman7.github.io/acme/images/site/feature.jpg);
+
+/*background-color:blue;*/
+    height:300px;
+    background-size:cover;
+
+}
+
+
+
+
+
 #rocket_list {
         list-style-type: none;
         font-size: 14px;
-        position:absolute;
-        right:10;
-        top:240;
+        position:relative;
+        right:0;
+        top:0;
+        width:250px;
 
 
 
@@ -187,6 +205,18 @@ footer {
 width:100%;
 height:70%
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #bottomhalf {
