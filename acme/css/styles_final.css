@@ -236,14 +236,13 @@ product content hidden by default
 @media only screen and (min-width: 768px) {
 
 
-    #rocketreviews{
-        position:absolute;
-        right:10;
-        top:800;
 
+    #bottomhalf{
+        display:flex;
+        flex-flow:row;
+        justify-content:space-around;
 
     }
-
 
 
 
