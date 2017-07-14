@@ -93,7 +93,7 @@ if (nav == "Anvil"){
 //
 
             // picture goes here.
-            $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/anvil.png" />')
+            $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/anvilsmall.png" />')
 
 
 
@@ -112,6 +112,7 @@ if (nav == "Anvil"){
 
             // this is the made by paragraph
             var manufacturer = content['Anvils']['manufacturer'];
+            document.getElementById('product_manufacturer').innerHTML += "Made by: ";
             document.getElementById('product_manufacturer').innerHTML += manufacturer;
 
 
@@ -121,6 +122,7 @@ if (nav == "Anvil"){
 
             // this is the review paragraph
             var review = content['Anvils']['reviews'];
+            document.getElementById('product_reviews').innerHTML += "Reviews: ";
             document.getElementById('product_reviews').innerHTML += review;
             document.getElementById('product_reviews').innerHTML += "/5 stars";
 
@@ -131,6 +133,7 @@ if (nav == "Anvil"){
 
             // this is the price h1 tag.
             var price = content['Anvils']['price'];
+            document.getElementById('product_price').innerHTML += "Price: ";
             document.getElementById('product_price').innerHTML += price;
 
 }
@@ -178,7 +181,7 @@ if (nav == "Anvil"){
                 //
 
                 // picture goes here.
-                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/tnt.png" />')
+                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/tntSmall.png" />')
 
 
 
@@ -197,6 +200,8 @@ if (nav == "Anvil"){
 
                 // this is the made by paragraph
                 var manufacturer = content['Explosives']['manufacturer'];
+
+                document.getElementById('product_manufacturer').innerHTML += "Made by: ";
                 document.getElementById('product_manufacturer').innerHTML += manufacturer;
 
 
@@ -206,6 +211,7 @@ if (nav == "Anvil"){
 
                 // this is the review paragraph
                 var review = content['Explosives']['reviews'];
+                document.getElementById('product_reviews').innerHTML += "Reviews: ";
                 document.getElementById('product_reviews').innerHTML += review;
                 document.getElementById('product_reviews').innerHTML += "/5 stars";
 
@@ -216,6 +222,8 @@ if (nav == "Anvil"){
 
                 // this is the price h1 tag.
                 var price = content['Explosives']['price'];
+
+                document.getElementById('product_price').innerHTML += "Price: ";
                 document.getElementById('product_price').innerHTML += price;
 
             }
@@ -257,7 +265,7 @@ if (nav == "Anvil"){
                 //
 
                 // picture goes here.
-                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/roadrunner.jpg" />')
+                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/roadrunnerSmall.jpg" />')
 
 
 
@@ -276,6 +284,8 @@ if (nav == "Anvil"){
 
                 // this is the made by paragraph
                 var manufacturer = content['Decoys']['manufacturer'];
+                document.getElementById('product_manufacturer').innerHTML += "Made by: ";
+
                 document.getElementById('product_manufacturer').innerHTML += manufacturer;
 
 
@@ -285,7 +295,10 @@ if (nav == "Anvil"){
 
                 // this is the review paragraph
                 var review = content['Decoys']['reviews'];
+                document.getElementById('product_reviews').innerHTML += "Reviews: ";
+
                 document.getElementById('product_reviews').innerHTML += review;
+
                 document.getElementById('product_reviews').innerHTML += "/5 stars";
 
 
@@ -295,6 +308,7 @@ if (nav == "Anvil"){
 
                 // this is the price h1 tag.
                 var price = content['Decoys']['price'];
+                document.getElementById('product_price').innerHTML += "Price: ";
                 document.getElementById('product_price').innerHTML += price;
 
             }
@@ -344,7 +358,7 @@ if (nav == "Anvil"){
                 //
 
                 // picture goes here.
-                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/trap.jpg" />')
+                $('#insertimage').prepend('<img class="product_picture" src="/Hillman7.github.io/acme/images/products/trapsmall.jpg" />')
 
 
 
@@ -363,6 +377,8 @@ if (nav == "Anvil"){
 
                 // this is the made by paragraph
                 var manufacturer = content['Traps']['manufacturer'];
+                document.getElementById('product_manufacturer').innerHTML += "Made by: ";
+
                 document.getElementById('product_manufacturer').innerHTML += manufacturer;
 
 
@@ -372,6 +388,8 @@ if (nav == "Anvil"){
 
                 // this is the review paragraph
                 var review = content['Traps']['reviews'];
+                document.getElementById('product_reviews').innerHTML += "Reviews: ";
+
                 document.getElementById('product_reviews').innerHTML += review;
                 document.getElementById('product_reviews').innerHTML += "/5 stars";
 
@@ -382,6 +400,8 @@ if (nav == "Anvil"){
 
                 // this is the price h1 tag.
                 var price = content['Traps']['price'];
+                document.getElementById('product_price').innerHTML += "Price: ";
+
                 document.getElementById('product_price').innerHTML += price;
 
             }

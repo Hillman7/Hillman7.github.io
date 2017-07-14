@@ -156,6 +156,7 @@ footer ul {
 footer {
     position:fixed;
     bottom:0;
+    width:100%;
 }
 
 
@@ -269,7 +270,7 @@ product content hidden by default
 
 #product_picture{
     position:relative;
-    width:100%;
+    max-width:70%;
     height:70%;
 }
 
@@ -284,19 +285,15 @@ product content hidden by default
 @media only screen and (min-width: 768px) {}
 
 
+#innerContent{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
 
-
-
-
-
-
-#product_description,
-#product_manufacturer,
-#product_reviews,
-#product_price
-{
-
-
+#product_description{
+    max-width: 50%;
 
 }
 
@@ -304,6 +301,13 @@ product content hidden by default
 
 
 
+
+#details{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-around;
+}
 
 
 
