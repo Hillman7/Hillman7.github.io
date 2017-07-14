@@ -14,23 +14,6 @@
 
 
 
-
-
-article,
-aside,
-footer,
-header,
-nav,
-section,
-main,
-figcaption,
-figure {
-    display: block;  just in case we have
-    any older browsers that don't recognize
-    the HTML5 semantic elements
-}
-
-
 header {
     background-color:#ffffff;
 }
