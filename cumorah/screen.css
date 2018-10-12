@@ -1,0 +1,38 @@
+#cellPhoneBorder
+{
+
+    position:absolute;
+    
+    top:0px;
+    left:0px;
+    /* color:gold; */
+    background-color:gold;
+    background-size:400px;
+    width:370px;
+    /* height:500px; */
+
+    height:200px;
+}
+
+#chatHolder
+{
+    position:absolute;
+    right:0px;
+    top:70px;
+
+    width:250px;
+    height:500px;
+
+    background-color:grey;
+}
+
+
+#threads
+{
+    background-color:black;
+    position:absolute;
+    left:0px;
+    top:70px;
+    width:170px;
+    height:500px;
+}
