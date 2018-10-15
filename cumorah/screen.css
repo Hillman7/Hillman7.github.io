@@ -35,3 +35,24 @@
     width:40%;
     height:100%;
 }
+
+
+.messageNode
+{
+
+background-color: white;
+border:solid;
+border-color:red;
+
+}
+
+#inputBar
+{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background-color:blueviolet;
+    border-color:red;
+
+}

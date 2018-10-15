@@ -3,6 +3,7 @@
 
     <!-- external style -->
     <link rel="stylesheet" type="text/css" href="screen.css" >
+    <script src="scriptChat.js"></script>
 
     <title>Cumorah | Chat </title>
 
@@ -10,24 +11,22 @@
 
 </head>
 
-<body>
+<body onload="retrieveMessages()">
 
 
 
     <!--  holds the app inside it -->
     <div id= "cellPhoneBorder">
+    <h1>Cumorah Chat</h1>    
+        <!-- Holds the names of each thread -->
+        <div id="threads">
+        </div>
+        <!-- Holds the chat nodes -->
+        <div id="chatHolder">
+        </div>
 
-    <h1>Cumorah Chat</h1>        
-
-
-    <div id="threads">
-    </div>
-
-
-    <div id="chatHolder">
-        
-    </div>
-
+        <!-- input bar -->
+        <div id="inputBar">testing stuff3</div>
 
     </div>
 
