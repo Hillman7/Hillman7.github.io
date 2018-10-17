@@ -1,12 +1,13 @@
 /***********************
  * Author: Jesse Hillman
- * 
+ * retrieves all the messages in the thread
  *****************/
+// add the onload listener // we need something that loads every time
+window.addEventListener('DOMContentLoaded', retrieveMessages,false);
+
 function retrieveMessages()
 {
-
     document.getElementById("sendButton").addEventListener("touchend", uploadMessage); 
-
     // later I will make this dynamic
     let threadName = "jesse";
    // get out of local storage the file thread
@@ -37,12 +38,14 @@ function retrieveMessages()
    }
 }
 
-// determine the user
+/*****************
+ * Author: Jesse Hillman
+ * Adds the new message typed
+ * 
+ * ************* */
 function uploadMessage()
 {
-
-    console.log("button was touched");
-
+console.log("hello");
 
     let threadName = "jesse";
      // learned how to make dates. // maybe I'll do something with this.
@@ -70,4 +73,7 @@ function uploadMessage()
       retrieveMessages();
       // clear the inputBar
       document.getElementById("inputBar").value = null;
+
+      // call the retrieve messages // we also need to call it when someone else does it
+      retrieveMessages();
 }
