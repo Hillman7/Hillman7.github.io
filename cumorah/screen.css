@@ -51,8 +51,22 @@ border-color:red;
     position:fixed;
     bottom:0px;
     left:0px;
-    width:100%;
+    width:80%;
     background-color:blueviolet;
     border-color:red;
+
+font-size:32px;
+    height:100px;
+}
+
+
+#sendButton
+{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width:20%;
+    height:110px;
+    background-color:burlywood;
 
 }
