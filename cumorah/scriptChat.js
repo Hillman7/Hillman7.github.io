@@ -7,6 +7,9 @@ window.addEventListener('DOMContentLoaded', retrieveMessages,false);
 
 function retrieveMessages()
 {
+
+    console.log("in retrieveMessages");
+
     document.getElementById("sendButton").addEventListener("touchend", uploadMessage); 
     // later I will make this dynamic
     let threadName = "jesse";
