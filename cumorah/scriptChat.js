@@ -8,6 +8,10 @@ window.addEventListener('DOMContentLoaded', retrieveMessages,false);
 function retrieveMessages()
 {
 
+    // Grab the user information
+    let user = window.location.hash.substring(1);
+    console.log(user);
+
     console.log("in retrieveMessages");
 
     document.getElementById("sendButton").addEventListener("touchend", uploadMessage); 

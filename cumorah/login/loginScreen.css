@@ -1,0 +1,73 @@
+#loginScreen
+{
+    background-color:black;
+    height:100%;
+    width:100%;
+}
+
+
+#user
+{
+position:fixed;
+top:40%;
+left:30%;
+
+height:5em;
+
+}
+
+
+#password
+{
+    position:fixed;
+top:50%;
+left:30%;
+height:5em;
+
+
+}
+
+#loginButton
+{
+    background-color:white;
+
+    width:7em;
+    height:2em;
+    position:fixed;
+    top:60%;
+    left:30%;
+
+
+}
+
+#loginButtonClicked
+{
+    background-color:grey;
+
+    width:7em;
+    height:2em;
+    position:fixed;
+    top:60%;
+    left:30%;
+}
+
+
+#welcome
+{
+    top:20%;
+    height:5em;
+    width:100%;
+
+    background-color:purple;
+
+}
+
+
+#welcomeWords
+{
+    position:relative;
+    top:0.5em;
+    left:1em;
+    color:yellow;
+    font-size:2em;
+}
