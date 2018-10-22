@@ -9,21 +9,25 @@
 #user
 {
 position:fixed;
-top:40%;
-left:30%;
+top:20%;
+left:25%;
 
-height:5em;
+height:15%;
+width:50%;
+font-size:25;
 
 }
 
 
 #password
 {
-    position:fixed;
-top:50%;
-left:30%;
-height:5em;
+position:fixed;
+top:40%;
+left:25%;
 
+height:15%;
+width:50%;
+font-size:25;
 
 }
 
@@ -31,11 +35,16 @@ height:5em;
 {
     background-color:white;
 
-    width:7em;
-    height:2em;
     position:fixed;
     top:60%;
-    left:30%;
+    left:25%;
+    font-size:50;
+    
+    height:15%;
+    width:50%;
+
+
+    text-align: center; line-height: 100px;
 
 
 }
