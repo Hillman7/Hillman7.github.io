@@ -16,7 +16,7 @@ function retrieveMessages()
 
     document.getElementById("sendButton").addEventListener("touchend", uploadMessage); 
     // later I will make this dynamic
-    let threadName = "jesse";
+    let threadName = user;
    // get out of local storage the file thread
    let storedMessagesString = localStorage.getItem(threadName);
    allMessages = JSON.parse(storedMessagesString);
@@ -52,9 +52,8 @@ function retrieveMessages()
  * ************* */
 function uploadMessage()
 {
-console.log("hello");
 
-    let threadName = "jesse";
+    let threadName = window.location.hash.substring(1);
      // learned how to make dates. // maybe I'll do something with this.
      let currentDateAndTime = new Date();
 
