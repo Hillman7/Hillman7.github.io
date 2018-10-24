@@ -26,6 +26,12 @@
 }
 
 
+#threadDisplay
+{
+    background-color:white;
+}
+
+
 #threads
 {
     background-color:black;
@@ -67,4 +73,33 @@ font-size:32px;
     height:110px;
     background-color:burlywood;
 
+}
+
+
+#addThread
+{
+    position:fixed;
+    bottom:15%;
+    left:30%;
+    width:10%;
+    background-color:yellow;
+    border-color:red;
+
+    font-size:32px;
+    height:100px;
+
+}
+
+
+#newThread
+{
+    position:fixed;
+    bottom:15%;
+    left:0px;
+    width:25%;
+    background-color:teal;
+    border-color:red;
+
+    font-size:32px;
+    height:100px;
 }

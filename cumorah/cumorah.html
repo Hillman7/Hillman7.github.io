@@ -3,7 +3,7 @@
 
     <!-- external style -->
     <link rel="stylesheet" type="text/css" href="screen.css" >
-    <script src="scriptChat.js"></script>
+    <script src="scriptChat.js" defer></script>
 
     <title>Cumorah | Chat </title>
 
@@ -17,12 +17,16 @@
     <h1>Cumorah Chat</h1>    
         <!-- Holds the names of each thread -->
         <div id="threads">
+            <div id="threadDisplay"></div>
+            <input type="text" placeholder="Type New Thread Name" id="newThread">
+            <div id="addThread"></div>
+
         </div>
         <!-- Holds the chat nodes -->
         <div id="chatHolder">
         </div>
         <!-- input bar -->
-        <input type ="text" id="inputBar">
+        <input type ="text" placeholder = "Enter Message" id="inputBar">
         <div id="sendButton"></div>
     </div>
 </body>
