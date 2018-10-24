@@ -20,9 +20,6 @@ document.getElementById("addThread").addEventListener("click", createThread);
 function retrieveThreads()
 {
 
-    console.log("made it this far");
-
-
     // use the username to find the names of all threads
      // Grab the user information
      let user = window.location.hash.substring(1);
@@ -43,6 +40,8 @@ function retrieveThreads()
            for (let i = 0; i < allThreads.length; i++)
            {
               let aThread = allThreads[i];
+
+              
               // make a new node
               let threadNode = document.createElement('div');
               // change class to get specific style
@@ -73,7 +72,8 @@ function createThread()
      let threadName = document.getElementById("newThread").value;
      console.log(threadName);
 
-    let storedThreads = localStorage.getItem(threadName);
+     // get the threads for that user
+   let storedThreads = localStorage.getItem(user);
 
     // parse the threads
     let allThreads = JSON.parse(storedThreads);
@@ -87,6 +87,9 @@ function createThread()
     allThreads.push(threadName);
     let allThreadString = JSON.stringify(allThreads);
 
+    // only one thing in here for some reason
+    console.log(allThreadString);
+
     // add a new thread
     localStorage.setItem(user, allThreadString);
 
@@ -95,6 +98,18 @@ function createThread()
 
     // clear the thread input
     document.getElementById("newThread").value = null;
+}
+
+
+/*******************
+ * Author: Jesse Hillman
+ * Determines thread that is open
+ * 
+ * 
+ * **********/
+function determineThread()
+{
+    
 }
 
 
