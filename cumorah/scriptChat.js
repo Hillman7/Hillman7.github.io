@@ -11,47 +11,6 @@ document.getElementById("addThread").addEventListener("touchend", createThread);
 document.getElementById("addThread").addEventListener("click", createThread); 
 
 
-/***********************
- * Author: Jesse Hillman
- * retrieves all the messages in the thread
- *****************/
-function retrieveMessages()
-{
-    // Grab the user information
-    let user = window.location.hash.substring(1);
-
-    // later I will make this dynamic
-    let threadName = "fun";
-
-   // get out of local storage the file thread
-   let storedMessagesString = localStorage.getItem(threadName);
-   allMessages = JSON.parse(storedMessagesString);
-   // if there is one
-   if (allMessages != null)
-   {
-      // make sure we put it in the right place
-      let noteDisplayer = document.getElementById(threadName);
-      // set a variable for holding the chat
-      let chat = document.getElementById("chatHolder");
-      // empty it
-      chat.innerHTML = null;
-      let numberOfMessages = allMessages.length;
-      // loop through every note
-      for (let i = 0; i < allMessages.length; i++)
-      {
-         let aNote = allMessages[i];
-         // make a new node
-         let messageNode = document.createElement('div');
-         // change class to get specific style
-         messageNode.className = "messageNode";
-         messageNode.innerHTML = aNote;
-         // add new message divs with text inside
-         chat.appendChild(messageNode);        
-      }
-   }
-}
-
-
 /**********
  * Author: Jesse Hillman
  * 
@@ -95,11 +54,8 @@ function retrieveThreads()
         }
 
         // call determine thread chosen
-
-
         // call retrieve messages
 }
-
 
 
 /**********
@@ -114,7 +70,8 @@ function createThread()
      // Grab the user information
      let user = window.location.hash.substring(1);
 
-     let threadName = document.getElementById("newThread");
+     let threadName = document.getElementById("newThread").value;
+     console.log(threadName);
 
     let storedThreads = localStorage.getItem(threadName);
 
@@ -133,16 +90,58 @@ function createThread()
     // add a new thread
     localStorage.setItem(user, allThreadString);
 
-
     // retrieve the new list of threads
     retrieveThreads();
 
     // clear the thread input
     document.getElementById("newThread").value = null;
-
-
-
 }
+
+
+
+/***********************
+ * Author: Jesse Hillman
+ * retrieves all the messages in the thread
+ *****************/
+function retrieveMessages()
+{
+    // Grab the user information
+    let user = window.location.hash.substring(1);
+
+    // later I will make this dynamic
+    let threadName = "fun";
+
+   // get out of local storage the file thread
+   let storedMessagesString = localStorage.getItem(threadName);
+   allMessages = JSON.parse(storedMessagesString);
+   // if there is one
+   if (allMessages != null)
+   {
+      // make sure we put it in the right place
+      let noteDisplayer = document.getElementById(threadName);
+      // set a variable for holding the chat
+      let chat = document.getElementById("chatHolder");
+      // empty it
+      chat.innerHTML = null;
+      let numberOfMessages = allMessages.length;
+      // loop through every note
+      for (let i = 0; i < allMessages.length; i++)
+      {
+         let aNote = allMessages[i];
+         // make a new node
+         let messageNode = document.createElement('div');
+         // change class to get specific style
+         messageNode.className = "messageNode";
+         messageNode.innerHTML = aNote;
+         // add new message divs with text inside
+         chat.appendChild(messageNode);        
+      }
+   }
+}
+
+
+
+
 
 
 
@@ -184,6 +183,8 @@ function uploadMessage()
       retrieveMessages();
       // clear the inputBar
       document.getElementById("inputBar").value = null;
+
+      
       // call the retrieve messages // we also need to call it when someone else does it
       retrieveMessages();
 }
