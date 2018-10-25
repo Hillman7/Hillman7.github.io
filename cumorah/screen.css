@@ -103,3 +103,26 @@ font-size:32px;
     font-size:32px;
     height:100px;
 }
+
+
+.navThread
+{
+list-style-type:none;
+
+
+}
+
+
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+.selected
+{
+    background-color: #555;
+    color: white;
+}
