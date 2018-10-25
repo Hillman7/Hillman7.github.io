@@ -3,22 +3,13 @@
 window.addEventListener('DOMContentLoaded', retrieveThreads,false);
 
 // message
-//document.getElementById("sendButton").addEventListener("touchend",uploadMessage); 
-//document.getElementById("sendButton").addEventListener("click", uploadMessage); 
-
 // add the listener for the send button and determine which thread needs to be updated.
 document.getElementById("sendButton").addEventListener("touchend",determineThreadUpload); 
 document.getElementById("sendButton").addEventListener("click",determineThreadUpload); 
 
-
-
-// determine what thread it is
-
 // thread adder
 document.getElementById("addThread").addEventListener("touchend", createThread); 
 document.getElementById("addThread").addEventListener("click", createThread); 
-
-
 
 // HAS TO KEEP TRACK OF WHICH THREAD IS SELECTED
 var SelectedThread = "";
@@ -32,13 +23,11 @@ var SelectedThread = "";
  * *******/
 function retrieveThreads()
 {
-
     // use the username to find the names of all threads
      // Grab the user information
      let user = window.location.hash.substring(1);
         // grab from the local storage previous notes.
-        let storedThreadstring = localStorage.getItem(user);
-        
+        let storedThreadstring = localStorage.getItem(user);   
         // call retrieve messages
        let allThreads = JSON.parse(storedThreadstring);
         // if there is one
@@ -49,12 +38,9 @@ function retrieveThreads()
            // empty it
            threadDisplayer.innerHTML = null;
            let numberOfThreads = allThreads.length;
-
-
            let navList = document.createElement('ul');
            threadDisplayer.appendChild(navList);
            navList.id = "threadListContainer";
-
            // loop through every thread
            for (let i = 0; i < allThreads.length; i++)
            {
@@ -73,24 +59,22 @@ function retrieveThreads()
 
               let linkText = document.createTextNode(aThread);
               threadNode.appendChild(linkText);
-
               newLine.appendChild(threadNode);
-
               // add new message divs with text inside
-              navList.appendChild(newLine);
-            
+              navList.appendChild(newLine); 
            }
         }
 
-   
-  // Adding all the handlers for the threads
+// Adding all the handlers for the threads
 var classname = document.getElementsByClassName("messageNode")
-
     for (let i = 0; i < classname.length; i++) 
     {
     classname[i].addEventListener('click', determineThread);
     classname[i].addEventListener('touchend', determineThread);
     }
+
+
+
 
 }
 
@@ -106,15 +90,11 @@ function createThread()
     // use the username to find the names of all threads
      // Grab the user information
      let user = window.location.hash.substring(1);
-
      let threadName = document.getElementById("newThread").value;
-
      // get the threads for that user
    let storedThreads = localStorage.getItem(user);
-
     // parse the threads
     let allThreads = JSON.parse(storedThreads);
-
     // if there are no threads yet make it a array.
     if(allThreads == null)
     { 
@@ -123,14 +103,10 @@ function createThread()
     // added a thread to my array
     allThreads.push(threadName);
     let allThreadString = JSON.stringify(allThreads);
-
-
     // add a new thread
     localStorage.setItem(user, allThreadString);
-
     // retrieve the new list of threads
     retrieveThreads();
-
     // clear the thread input
     document.getElementById("newThread").value = null;
 }
@@ -167,12 +143,7 @@ function retrieveMessages(trueThreadName)
 {
     // Grab the user information
     let user = window.location.hash.substring(1);
-
-    // later I will make this dynamic
- //   let threadName = "fun";
-let threadName = trueThreadName;
-
-
+    let threadName = trueThreadName;
    // get out of local storage the file thread
    let storedMessagesString = localStorage.getItem(threadName);
    allMessages = JSON.parse(storedMessagesString);
@@ -229,27 +200,20 @@ function determineThreadUpload()
 function uploadMessage(trueThreadName)
 {
     // get the user
-    let user =window.location.hash.substring(1);
-    
+    let user = window.location.hash.substring(1);
     //let threadName = "fun";
     let threadName = trueThreadName;
-
      // learned how to make dates. // maybe I'll do something with this.
      let currentDateAndTime = new Date();
-
      // keep the user name with it as well
      let messageInput = user;
      messageInput += ": ";
      messageInput += document.getElementById("inputBar").value;
-
      console.log(messageInput);
-
      // grab from the local storage previous notes.
      let storedMessagesString = localStorage.getItem(threadName);
-
      // parse the messages
      let allMessages = JSON.parse(storedMessagesString);
-
       // if there are no messages yet make it a array.
       if(allMessages == null)
       { 
@@ -261,10 +225,9 @@ function uploadMessage(trueThreadName)
       // save in local storage a file
       localStorage.setItem(threadName, allMessagesString);
       // update the list because we just added something new
-      retrieveMessages();
+      retrieveMessages(trueThreadName);
       // clear the inputBar
       document.getElementById("inputBar").value = null;
-
       // call the retrieve messages // we also need to call it when someone else does it
-      retrieveMessages();
+      retrieveMessages(trueThreadName);
 }
