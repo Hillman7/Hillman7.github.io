@@ -39,6 +39,11 @@ function retrieveThreads()
            threadDisplayer.innerHTML = null;
            let numberOfThreads = allThreads.length;
            let navList = document.createElement('ul');
+           // added this
+           console.log("hello world");
+           navList.id = "deSelecter";
+
+
            threadDisplayer.appendChild(navList);
            navList.id = "threadListContainer";
            // loop through every thread
@@ -123,6 +128,12 @@ function determineThread()
     //automatically bound to this
     if (this.className != "selected")
     {
+
+        // deselect all that are there
+        deselectAll();
+
+
+        // make this one selected
         this.className = "selected";
             // tell the rest of the program that this thread is selected
             SelectedThread = this.innerHTML;
@@ -134,6 +145,43 @@ function determineThread()
         this.className = "messageNode";
     }
 }
+
+
+
+/**********************
+ * Author: Jesse Hillman
+ * 
+ * Select all of the threads and make them
+ * not selected
+ * 
+ * ****** */
+function deselectAll()
+{
+console.log("we are in deselect");
+    let threadListButtons = document.getElementsByTagName('ul');
+ //   console.dir(threadListButtons[0].children[0].children[0].className);
+
+ //   console.dir(threadListButtons[0].children);
+
+    // loop through each line item
+  for (let i = 0; i < threadListButtons[0].children.length; i++)
+  {
+      if (threadListButtons[0].children[i].children[0].className == "selected")
+      {
+          // make it normal again
+          threadListButtons[0].children[i].children[0].className = "messageNode";
+      }
+  }
+
+
+}
+
+
+
+
+
+
+
 
 /***********************
  * Author: Jesse Hillman
@@ -157,6 +205,9 @@ function retrieveMessages(trueThreadName)
       // empty it
       chat.innerHTML = null;
       let numberOfMessages = allMessages.length;
+
+      
+
       // loop through every note
       for (let i = 0; i < allMessages.length; i++)
       {
