@@ -40,7 +40,6 @@ function retrieveThreads()
            let numberOfThreads = allThreads.length;
            let navList = document.createElement('ul');
            // added this
-           console.log("hello world");
            navList.id = "deSelecter";
 
 
@@ -157,7 +156,6 @@ function determineThread()
  * ****** */
 function deselectAll()
 {
-console.log("we are in deselect");
     let threadListButtons = document.getElementsByTagName('ul');
  //   console.dir(threadListButtons[0].children[0].children[0].className);
 
@@ -191,6 +189,9 @@ function retrieveMessages(trueThreadName)
 {
     // Grab the user information
     let user = window.location.hash.substring(1);
+
+
+    
     let threadName = trueThreadName;
    // get out of local storage the file thread
    let storedMessagesString = localStorage.getItem(threadName);
@@ -200,13 +201,16 @@ function retrieveMessages(trueThreadName)
    {
       // make sure we put it in the right place
       let noteDisplayer = document.getElementById(threadName);
+
+
+      
       // set a variable for holding the chat
       let chat = document.getElementById("chatHolder");
       // empty it
       chat.innerHTML = null;
       let numberOfMessages = allMessages.length;
 
-      
+
 
       // loop through every note
       for (let i = 0; i < allMessages.length; i++)
@@ -220,7 +224,28 @@ function retrieveMessages(trueThreadName)
          // add new message divs with text inside
          chat.appendChild(messageNode);        
       }
+
+
+
+   
+            // if there are no messages just clear it.
+        // if (!allMessages.length)
+        // {
+        //     console.log("clear it");
+        //     chat.innerHTML = null;
+        // }
+
+
+
    }
+   // its empty
+   else
+   {
+       console.log(allMessages);
+       let chat = document.getElementById("chatHolder");
+       chat.innerHTML = null;
+   }
+
 }
 
 
@@ -260,8 +285,10 @@ function uploadMessage(trueThreadName)
      let messageInput = user;
      messageInput += ": ";
      messageInput += document.getElementById("inputBar").value;
-     console.log(messageInput);
-     // grab from the local storage previous notes.
+    
+    
+    
+    // grab from the local storage previous notes.
      let storedMessagesString = localStorage.getItem(threadName);
      // parse the messages
      let allMessages = JSON.parse(storedMessagesString);
