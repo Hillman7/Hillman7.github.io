@@ -5,11 +5,11 @@ window.addEventListener('DOMContentLoaded', retrieveThreads,false);
 // message
 // add the listener for the send button and determine which thread needs to be updated.
 document.getElementById("sendButton").addEventListener("touchend",determineThreadUpload); 
-document.getElementById("sendButton").addEventListener("click",determineThreadUpload); 
+// document.getElementById("sendButton").addEventListener("click",determineThreadUpload); 
 
 // thread adder
 document.getElementById("addThread").addEventListener("touchend", createThread); 
-document.getElementById("addThread").addEventListener("click", createThread); 
+// document.getElementById("addThread").addEventListener("click", createThread); 
 
 // HAS TO KEEP TRACK OF WHICH THREAD IS SELECTED
 var SelectedThread = "";
@@ -69,7 +69,7 @@ function retrieveThreads()
 var classname = document.getElementsByClassName("messageNode")
     for (let i = 0; i < classname.length; i++) 
     {
-    classname[i].addEventListener('click', determineThread);
+    // classname[i].addEventListener('click', determineThread);
     classname[i].addEventListener('touchend', determineThread);
     }
 

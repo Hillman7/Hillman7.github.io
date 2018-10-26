@@ -7,7 +7,7 @@
 
 
 document.getElementById("loginButton").addEventListener("touchend", loginUser); 
-document.getElementById("loginButton").addEventListener("click", loginUser); 
+// document.getElementById("loginButton").addEventListener("click", loginUser); 
 
 
 
